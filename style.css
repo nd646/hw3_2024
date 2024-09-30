@@ -143,13 +143,12 @@ skip.focus{
 first div in the grid  and place it in the grid. */
 .container div:first-child{
   grid-column: 1 / -1;
-  background-image: url(images/header.jpg);
+  background-image: url(../images/header.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  /*position: absolute;*/
 }
 
 
@@ -161,20 +160,24 @@ first div in the grid  and place it in the grid. */
 .about{
   grid-column: 2 / span 1;
   grid-row-start: 2;
+  align-self: center;
 }
 .method{
   grid-column: 2 / span 1;
   grid-row-start: 3;
+  align-self: center;
 }
 
 .clients{
   grid-column: 2 / span 1;
   grid-row-start: 4;
+  align-self: center;
 }
 
 .contact{
   grid-column: 2 / span 1;
   grid-row-start: 5;
+  align-self: center;
 }
 
 .about-image{
