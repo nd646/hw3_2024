@@ -116,7 +116,7 @@ a:hover{
 .skip{
   visibility: hidden; 
   position: absolute;
-  top: 40px;
+  top: -40px;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
@@ -136,6 +136,7 @@ skip.focus{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 15px;
+  position: relative
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -147,6 +148,8 @@ first div in the grid  and place it in the grid. */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  /*position: absolute;*/
 }
 
 
@@ -176,6 +179,7 @@ first div in the grid  and place it in the grid. */
 
 .about-image{
   grid-row-start: 2;
+  grid-column: 1 / -1;
   object-fit: cover;
   max-height: 600px;
   overflow: hidden;
@@ -183,6 +187,7 @@ first div in the grid  and place it in the grid. */
 
 .method-image{
   grid-row-start: 3;
+  grid-column: 1 / -1;
   object-fit: cover;
   max-height: 600px;
   overflow: hidden;
@@ -190,6 +195,7 @@ first div in the grid  and place it in the grid. */
 
 .clients-image{
   grid-row-start: 4;
+  grid-column: 1 / -1;
   object-fit: cover;
   max-height: 600px;
   overflow: hidden;
@@ -197,6 +203,7 @@ first div in the grid  and place it in the grid. */
 
 .contact-image{
   grid-row-start: 5;
+  grid-column: 1 / -1;
   object-fit: cover;
   max-height: 600px;
   overflow: hidden;
@@ -204,9 +211,9 @@ first div in the grid  and place it in the grid. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
-  text-align:center;
-  justify-content: center;
   align-items: center;
+  text-align:center;
+  align-content: center;
 }
 
 /* Add your media query here */
@@ -218,6 +225,7 @@ first div in the grid  and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
   nav{
+    align-items: center;
     text-align: right;
     padding: 30px 0px 30px 0px;
   }
@@ -263,6 +271,7 @@ first div in the grid  and place it in the grid. */
  .text-block{
   max-height: 250px;
   overflow: auto;
+  align-content: center;
  }
 
 }
