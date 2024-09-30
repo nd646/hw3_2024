@@ -156,22 +156,22 @@ first div in the grid  and place it in the grid. */
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 
 .about{
+  grid-column: 2 / span 1;
   grid-row-start: 2;
-  column-span: 1;
 }
 .method{
+  grid-column: 2 / span 1;
   grid-row-start: 3;
-  column-span: 1;
 }
 
 .clients{
+  grid-column: 2 / span 1;
   grid-row-start: 4;
-  column-span: 1;
 }
 
 .contact{
+  grid-column: 2 / span 1;
   grid-row-start: 5;
-  column-span: 1;
 }
 
 .about-image{
@@ -230,40 +230,32 @@ first div in the grid  and place it in the grid. */
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
 .about{
-  grid-row-start: 3;
-  column-span: 2;
+  grid-column: 3 / span 2;
 }
 .clients{
-  grid-row-start: 3;
-  column-span: 2;
+  grid-column: 3 / span 2;
 }
 .method-image{
-  grid-row-start: 3;
-  column-span: 2;
+  grid-column: 3 / span 2;
 }
 .contact-image{
-  grid-row-start: 3;
-  column-span: 2;
+  grid-column: 3 / span 2;
 }
 
 .method{
-  grid-row-start: 2;
-  column-span: 2;
+  grid-column: 2 / span 2;
 }
 
 .contact{
-  grid-row-start: 2;
-  column-span: 2;
+  grid-column: 2 / span 2;
 }
 
 .about-image{
-  grid-row-start: 2;
-  column-span: 2;
+  grid-column: 2 / span 2;
 }
 
 .clients-image{
-  grid-row-start: 2;
-  column-span: 2;
+  grid-column: 2 / span 2;
 }
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
